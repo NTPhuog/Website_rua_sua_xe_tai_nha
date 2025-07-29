@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Đánh giá nhân viên - SửaRửaXeTạiNhà</title>
+  <link rel="stylesheet" href="nhanvien.css"/>
+  <link rel="stylesheet" href="home.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body data-page="nhanvien2"> <header>
+    <nav class="navbar">
+         <a href="Home.html">
+      <img src="logo.png" alt="Logo" style="width: 300px; height: auto; display: block;">
+    </a>
+      <a href="optionNhanvien.html">Nhân viên</a>
+    </nav>
+  </header>
+
+  <main>
+    <section style="text-align: center; padding: 40px 20px;">
+      <h1 class="staff-title">Đội ngũ nhân viên sửa chữa</h1>
+      <p class="sub">Chuyên nghiệp - Tận tâm - Tỉ mỉ</p>
+    </section>
+
+    <div class="staff-grid" id="staffGrid">
+      </div>
+  </main>
+
+  <div class="modal" id="reviewModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-top">
+        <img id="modalImg" src="" alt="">
+        <div class="modal-top-info">
+          <h2 id="modalName"></h2>
+          <p id="modalJob"></p>
+          <p id="modalAge"></p>
+          <p id="modalChar"></p>
+          <p id="modalHobby"></p>
+        </div>
+      </div>
+
+      <div class="modal-reviews">
+        <h3>Đánh giá của khách hàng</h3>
+        <div id="reviewList"></div>
+      </div>
+
+      <div class="review-form">
+        <h3>Gửi đánh giá của bạn</h3>
+        <div class="star-select" id="starSelect">
+          <i class="fas fa-star" data-star="1"></i>
+          <i class="fas fa-star" data-star="2"></i>
+          <i class="fas fa-star" data-star="3"></i>
+          <i class="fas fa-star" data-star="4"></i>
+          <i class="fas fa-star" data-star="5"></i>
+        </div>
+        <textarea id="reviewText" placeholder="Nhập bình luận..."></textarea>
+        <button id="submitReview">Gửi đánh giá</button>
+      </div>
+    </div>
+  </div>
+
+<footer>
+  <img src="logo.png" alt="Logo" style="width: 150px;">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Liên hệ</h3>
+      <p><i class="fas fa-phone"></i> 0901 234 567</p>
+      <p><i class="fas fa-phone"></i> 0912 345 678</p>
+      <p><i class="fas fa-envelope"></i> 23050026@student.bdu.edu.vn</p>
+      <p><i class="fas fa-clock"></i> Làm việc: 7:00 – 22:00 (CN: 8:00 – 18:00)</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Hệ thống cửa hàng</h3>
+      <ul>
+        <li>123 Nguyễn Văn A, Gò Vấp</li>
+        <li>45 Lê Lợi, Q.1</li>
+        <li>99 Trường Chinh, Tân Bình</li>
+        <li>56 Điện Biên Phủ, Bình Thạnh</li>
+        <li>78 Nguyễn Trãi, Q.5</li>
+        <li>22 Hoàng Hoa Thám, Phú Nhuận</li>
+        <li>11 Tô Ký, Hóc Môn</li>
+        <li>88 Võ Văn Ngân, Thủ Đức</li>
+        <li>33 Phan Văn Trị, Bình Thạnh</li>
+        <li>100 Lý Thường Kiệt, Q.10</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Chính sách</h3>
+      <p><a href="chinhsach.html">Chính sách bảo hành</a></p>
+      <p><a href="chinhsach.html">Chính sách thanh toán</a></p>
+      <p><a href="chinhsach.html">Chính sách bảo mật</a></p>
+
+      <h3 style="margin-top: 20px;">Kết nối</h3>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+        <a href="#"><i class="fab fa-zalo"></i> Zalo</a><br>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Nhận thông tin khuyến mãi</h3>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Nhập email của bạn" required>
+        <button type="submit">Đăng ký</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 Sửa Rửa Xe Tại Nhà. Giữ bản quyền.</p>
+  </div>
+</footer>
+
+  <script src="nhanvien.js"></script>
+  <script src="home.js"></script>
+
+</body>
+</html>

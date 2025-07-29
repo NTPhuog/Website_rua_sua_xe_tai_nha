@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đội Ngũ Nhân Viên</title>
+  <link rel="stylesheet" href="home.css"/>
+  <link rel="stylesheet" href="opnhanvien.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="Home.html">
+      <img src="logo.png" alt="Logo" style="width: 300px; height: auto; display: block;">
+    </a>
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+  </nav>
+</header>
+
+<main class="staff-container">
+  <h1>Đội Ngũ Nhân Viên Chuyên Nghiệp</h1>
+  <p class="subtitle">Với đội ngũ nhân viên giàu kinh nghiệm, chúng tôi cam kết mang lại dịch vụ tốt nhất</p>
+
+  <div class="staff-categories">
+    <!-- Nhân viên rửa xe -->
+    <div class="category-card">
+      <a href="nhanvien.html">
+      <div class="category-icon">
+        <i class="fas fa-car"></i>
+      </div>
+      <h3>Nhân Viên Rửa Xe</h3>
+      <p>Chuyên nghiệp - Tận tâm - Tỉ mỉ</p>
+      </a>
+    </div>
+
+    <!-- Nhân viên sửa chữa -->
+    <div class="category-card" onclick="showStaff('repair')">
+      <a href="nhanvien2.html">
+      <div class="category-icon">
+        <i class="fas fa-wrench"></i>
+      </div>
+      <h3>Nhân Viên Sửa Chữa</h3>
+      <p>Kinh nghiệm - Chính xác - Uy tín</p>
+      </a>
+    </div>
+
+    <!-- Nhân viên bảo dưỡng -->
+    <div class="category-card" onclick="showStaff('maintenance')">
+      <a href="nhanvien3.html">
+      <div class="category-icon">
+        <i class="fas fa-tools"></i>
+      </div>
+      <h3>Nhân Viên Bảo Dưỡng</h3>
+      <p>Kiến thức sâu - Quy trình chuẩn</p>
+      </a>
+    </div>
+
+    <!-- Nhân viên cứu trợ -->
+    <div class="category-card" onclick="showStaff('rescue')">
+      <a href="nhanvien4.html">
+      <div class="category-icon">
+        <i class="fas fa-first-aid"></i>
+      </div>
+      <h3>Nhân Viên Cứu Trợ</h3>
+      <p>Nhanh nhẹn - Xử lý tốt - 24/7</p>
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <img src="logo.png" alt="Logo" style="width: 150px;">
+  <div class="footer-container">
+    <!-- Cột 1: Liên hệ -->
+    <div class="footer-column">
+      <h3>Liên hệ</h3>
+      <p><i class="fas fa-phone"></i> 0901 234 567</p>
+      <p><i class="fas fa-phone"></i> 0912 345 678</p>
+      <p><i class="fas fa-envelope"></i> 23050026@student.bdu.edu.vn</p>
+      <p><i class="fas fa-clock"></i> Làm việc: 7:00 – 22:00 (CN: 8:00 – 18:00)</p>
+    </div>
+
+    <!-- Cột 2: Hệ thống cửa hàng -->
+    <div class="footer-column">
+      <h3>Hệ thống cửa hàng</h3>
+      <ul>
+        <li>123 Nguyễn Văn A, Gò Vấp</li>
+        <li>45 Lê Lợi, Q.1</li>
+        <li>99 Trường Chinh, Tân Bình</li>
+        <li>56 Điện Biên Phủ, Bình Thạnh</li>
+        <li>78 Nguyễn Trãi, Q.5</li>
+        <li>22 Hoàng Hoa Thám, Phú Nhuận</li>
+        <li>11 Tô Ký, Hóc Môn</li>
+        <li>88 Võ Văn Ngân, Thủ Đức</li>
+        <li>33 Phan Văn Trị, Bình Thạnh</li>
+        <li>100 Lý Thường Kiệt, Q.10</li>
+      </ul>
+    </div>
+
+    <!-- Cột 3: Chính sách & Kết nối -->
+    <div class="footer-column">
+      <h3>Chính sách</h3>
+      <p><a href="chinhsach.html">Chính sách bảo hành</a></p>
+      <p><a href="chinhsach.html">Chính sách thanh toán</a></p>
+      <p><a href="chinhsach.html">Chính sách bảo mật</a></p>
+
+      <h3 style="margin-top: 20px;">Kết nối</h3>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+        <a href="#"><i class="fab fa-zalo"></i> Zalo</a><br>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+
+    <!-- Cột 4: Đăng ký nhận tin -->
+    <div class="footer-column">
+      <h3>Nhận thông tin khuyến mãi</h3>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Nhập email của bạn" required>
+        <button type="submit">Đăng ký</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 Sửa Rửa Xe Tại Nhà. Giữ bản quyền.</p>
+  </div>
+</footer>
+
+
+<!-- Thêm script từ home.js -->
+<script src="home.js"></script>
+
+</body>
+</html>

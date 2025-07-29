@@ -1,0 +1,119 @@
+/* ===== TRANG NHÂN VIÊN ===== */
+.staff-container {
+  max-width: 1200px;
+  margin: 100px auto 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.staff-container h1 {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.staff-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.category-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.category-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  background: #f0f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-icon i {
+  font-size: 30px;
+  color: #00bcd4;
+}
+
+
+.placeholder-text {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+
+.staff-card {
+  display: flex;
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.staff-img {
+  width: 120px;
+  height: 120px;
+}
+
+.staff-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.staff-info {
+  flex: 1;
+  padding: 15px;
+  text-align: left;
+}
+
+.staff-info h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.staff-info p {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.staff-info strong {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .staff-categories {
+    grid-template-columns: 1fr;
+  }
+  
+  .staff-card {
+    flex-direction: column;
+  }
+  
+  .staff-img {
+    width: 100%;
+    height: 150px;
+  }
+}
